@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags for search engines -->
+    <meta name="description"
+        content="Johann Erdmann Hummel. Historic page of a German Painter and professor at the Prussian Academy of Arts. Courses on perspective, optics, and architecture">
+    <meta name="keywords"
+        content="Johann Erdmann Hummel, painter, historic, Berlin, Perspektiven Hummel, perspective, hist. Biedermeier">
+    <meta name="author" content="RTS">
+    <!-- Title -->
+    <title>Johann Erdmann Hummel</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favi-icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favi-icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favi-icons/favicon-16x16.png">
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/b5633ebce6.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Image source: book from Georg Hummel-->
+        <img src="assets/images/logo.webp" alt="black and white self portrait of Johann Erdmann Hummel">
+        <h1>J.E. Hummel</h1>
+        <!-- Burger-icon inspired by Love Running project-->
+        <input type="checkbox" id="burger-icon" name="burger-icon">
+        <label for="burger-icon" class="burger-icon-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="paintings.html">Paintings</a></li>
+                <li><a href="exhibitions.html">Exhibitions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <div id="form">
+            <form action="https://contactform.mysite.net/" method="post">
+                <fieldset>
+                    <legend>Please fill out the applicable fields</legend>
+                    <!-- exhibition or publication? -->
+                    <div class="form-box">
+                        <p>1. Do you have news about a not mentioned exhibition or publication?</p>
+                        <input type="radio" id="exhibition" name="kind-of-info" value="exhibition" required>
+                        <label for="exhibition">Exhibition</label>
+                        <input type="radio" id="publication" name="kind-of-info" value="publication">
+                        <label for="publication">Publication</label>
+                        <p class="con-p">If you chose publication please go to question 4!</p>
+                    </div>
+                    <!-- shortterm or permanent exhibition -->
+                    <div class="form-box">
+                        <p>2. What type of exhibition is it? (Only necessary if it is an information about an exhibition)</p>
+                        <input type="radio" id="short-exhibition" name="exhibition-type" value="short-exhibition">
+                        <label for="short-exhibition">Shortterm Exhibition</label>
+                        <br>
+                        <input type="radio" id="long-exhibition" name="exhibition-type" value="long-exhibition">
+                        <label for="long-exhibition">Permanent Exhibition</label>
+                        <p class="con-p">If you chose permanent exhibition please skip the next question!</p>
+                    </div>
+                    <!-- Start and end date of a shortterm exhibition -->
+                    <div class="form-box">
+                        <p>3. What are the starting and end days of the shortterm exhibition?</p>
+                        <label for="start">Start Date:</label>
+                        <input type="date" id="start" name="start-date" value="2023-08-01">
+                        <br>
+                        <label for="end">End Date:</label>
+                        <input type="date" id="end" name="end-date" value="2023-08-01">
+                    </div>
+                    <!-- URL -->
+                    <div class="form-box">
+                        <p>4. On which site can I find more informations?</p>
+                        <input type="url" id="site" name="site" placeholder="url" size="45" required>
+                        <label for="site"></label>
+                    </div>
+                    <!-- additional, optional information -->
+                    <div class="form-box">
+                        <p>5. Do you want to give additional information? (optional)</p>
+                        <input type="text" id="add-info" name="add-info" placeholder="More information (optional)" size="45">
+                        <label for="add-info"></label>
+                    </div>
+                    <!-- Buttons -->
+                    <div id="buttons-div">
+                        <input type="submit" value="Send" class="buttons">
+                        <input type="reset" value="Reset" class="buttons">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <h3>Find the information also on:</h3>
+        <ul id="social-networks">
+            <li class="social"><a href="http://www.facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="social"><a href="http://www.twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li class="social"><a href="http://www.instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
